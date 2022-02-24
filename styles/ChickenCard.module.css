@@ -1,0 +1,34 @@
+.container {
+  width: 20rem;
+}
+
+.image {
+  align-self: center;
+}
+
+.name {
+  text-decoration: none;
+}
+
+.name:hover,
+.name:focus,
+.name:active {
+  color: #0070f3;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.description {
+  text-align: left;
+  min-height: 144px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+}
+
+.price,
+.quantity {
+  text-align: left;
+}
