@@ -2,9 +2,9 @@ import mongoose from "mongoose";
 const Schema = mongoose.Schema;
 
 const updateDataRequestSchema = new Schema({
-  chicken_id: { type: Schema.Types.ObjectId, ref: "Chicken" },
   chicken: {},
-  status: String
+  status: String,
+  chicken_id: { type: Schema.Types.ObjectId, ref: "Chicken" }
 });
 
 const UpdateDataRequest = mongoose.model(

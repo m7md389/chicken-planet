@@ -2,12 +2,11 @@ import mongoose from "mongoose";
 const Schema = mongoose.Schema;
 
 const eggSchema = new Schema({
-  chicken_id: { type: Schema.Types.ObjectId, ref: "Chicken" },
-  size: Number,
+  size: String,
   color: String,
   quantity_per_year: Number,
   price: Number,
-  eggs_in_incubator: { count: Number, hatch_data: Date },
+  eggs_in_incubator: { count: Number, hatch_date: Date },
   images: [String]
 });
 
