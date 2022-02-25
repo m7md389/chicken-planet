@@ -1,10 +1,11 @@
 import express from "express";
 import * as mongoose from "mongoose";
 import cors from "cors";
+require('dotenv').config()
 
 const app = express();
 const path = require("path");
-mongoose.connect(process.env.MONGODB_URI);
+mongoose.connect(process.env.MONGODB_URI || "");
 
 app.use(cors());
 app.use(express.json());
