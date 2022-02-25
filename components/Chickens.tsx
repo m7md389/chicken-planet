@@ -1,6 +1,6 @@
 import React from "react";
 import ChickenCard from "./ChickenCard";
-import chickensStyles from "../styles/Chickens.module.css";
+import chickensStyles from "../styles/Chickens.module.scss";
 
 const Chickens: React.FC = () => {
   const chickens = getChickens();

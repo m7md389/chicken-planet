@@ -2,7 +2,7 @@ import React from "react";
 import Head from "next/head";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import layoutStyles from "../styles/Layout.module.css";
+import layoutStyles from "../styles/Layout.module.scss";
 
 const Layout: React.FC = ({ children }) => {
   return (

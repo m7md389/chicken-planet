@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import chickenCardStyle from "../styles/ChickenCard.module.css";
+import chickenCardStyle from "../styles/ChickenCard.module.scss";
 import Link from "next/link";
 
 interface Props {

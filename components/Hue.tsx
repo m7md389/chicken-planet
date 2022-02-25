@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import hueStyles from "../styles/Hue.module.css";
+import hueStyles from "../styles/Hue.module.scss";
 
 interface Props {
   img: string;
