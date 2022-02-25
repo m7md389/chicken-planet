@@ -6,8 +6,9 @@
   align-self: center;
 }
 
-.name {
-  text-decoration: none;
+.price,
+.quantity {
+  text-align: left;
 }
 
 .name:hover,
@@ -26,9 +27,4 @@
   display: -webkit-box;
   -webkit-line-clamp: 6;
   -webkit-box-orient: vertical;
-}
-
-.price,
-.quantity {
-  text-align: left;
 }
