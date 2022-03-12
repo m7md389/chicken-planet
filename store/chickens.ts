@@ -1,9 +1,13 @@
 import ChickenInterface from "./interfaces/chicken";
 
 export default class Chicken {
-  chicken: [ChickenInterface] | [];
+  data: [ChickenInterface] | [];
 
   constructor() {
-    this.chicken = [];
+    this.data = [];
+  }
+
+  getChicken() {
+    return this.data[0];
   }
 }

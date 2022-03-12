@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import navbarStyles from "../styles/Navbar.module.scss";
 
 const Navbar: React.FC = () => {
   const [isOpenedNavbar, setIsOpenedNavbar] = useState(false);
@@ -12,7 +13,7 @@ const Navbar: React.FC = () => {
   return (
     <nav
       id="navbar"
-      className="navbar navbar-expand-lg navbar-light  my-navbar-container"
+      className={`navbar navbar-expand-lg navbar-light ${navbarStyles.navbar}`}
     >
       <Link href="/">
         <span className="navbar-brand">
@@ -35,22 +36,23 @@ const Navbar: React.FC = () => {
       </button>
 
       <div className={navbarClass} id="navbarNav">
-        <div className="navbar-nav">
-          <div className="navbar-links-content-container">
-            <span className="nav-item nav-link nav-link-tabs">
-              <Link href="/">Home</Link>
-            </span>
-            {/* <span className="nav-item nav-link nav-link-tabs">
-              <Link href="/login">Login</Link>
-            </span>
-            <span className="nav-item nav-link nav-link-tabs">
-              <Link href="/register">Register</Link>
-            </span>
-            <span className="nav-item nav-link nav-link-tabs">
+        <ul className={`navbar-nav ${navbarStyles.ul}`}>
+          <li className="nav-item nav-link nav-link-tabs">
+            <Link href="/">Home</Link>
+          </li>
+          <li className="nav-item nav-link nav-link-tabs">
+            <Link href="/chickens">Chickens</Link>
+          </li>
+          <li className="nav-item nav-link nav-link-tabs">
+            <Link href="/login">Login</Link>
+          </li>
+          <li className="nav-item nav-link nav-link-tabs">
+            <Link href="/register">Register</Link>
+          </li>
+          {/* <li className="nav-item nav-link nav-link-tabs">
               <Link href="/logout">Logout</Link>
-            </span> */}
-          </div>
-        </div>
+            </li> */}
+        </ul>
       </div>
     </nav>
   );

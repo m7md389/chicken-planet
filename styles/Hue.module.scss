@@ -1,23 +1,26 @@
+@use "./abstracts" as *;
+
 .container {
-  display: relative;
-  top: 0;
-  left: 0;
-}
+  position: relative;
 
-.container > h1 {
-  position: absolute;
-  top: 6rem;
-  left: 2rem;
-  font-size: 10vw;
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-  text-align: center;
-}
+  .img {
+  }
 
-.container > p {
-  position: absolute;
-  top: 15rem;
-  left: 5rem;
-  width: 20rem;
+  h1 {
+    position: absolute;
+    top: 6vw;
+    left: 2vw;
+    margin: 0;
+    line-height: 1.15;
+    font-size: 5vw;
+    text-align: center;
+    font-family: $title-font;
+  }
+
+  p {
+    position: absolute;
+    top: 15vw;
+    left: 8vw;
+    width: 20em;
+  }
 }

@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 
 const Logout: NextPage = () => {
-  return <div></div>;
+  return null;
 };
 
 export default Logout;

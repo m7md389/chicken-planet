@@ -1,0 +1,30 @@
+@use "./abstracts" as *;
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  gap: 2em;
+  padding: 1em 2em;
+  margin: 1em;
+  width: 70%;
+  border: solid black;
+  border-radius: 10px;
+}
+
+.about {
+  span {
+    margin-right: 0.4em;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-family: $title-font;
+    font-weight: lighter;
+  }
+}
+
+.shownImage {
+  width: 400px;
+}
+
+.details {
+  text-align: left;
+}

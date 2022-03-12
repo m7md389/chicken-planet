@@ -1,0 +1,12 @@
+@use "./abstracts" as *;
+
+.navbar {
+  background-color: $nav-background;
+  position: fixed;
+  z-index: 999;
+  width: 100vw;
+}
+
+.ul a {
+  color: $nav-text;
+}
