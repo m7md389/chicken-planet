@@ -11,13 +11,13 @@ const Register: NextPage = () => {
     password: "",
     phone: "",
     city: "",
-    linkedin: "",
+    country: "",
     cohortId: "default",
-    status: "default"
+    status: "default",
   };
   let [inputs, setInputs] = useState(INITIAL_INPUTS);
   let [courses, setCourses] = useState([]);
-  const statusOptions = ["Studying", "Searching", "Working", "no-info"];
+  const statusOptions = ["Seller", "Buyer", "Farmer", "no-info"];
 
   const handleChange = (event: any) => {
     setInputs({ ...inputs, [event.target.id]: event.target.value });
@@ -80,10 +80,10 @@ const Register: NextPage = () => {
             />
             <input
               type="text"
-              placeholder="LinkedIn"
-              value={inputs.linkedin}
+              placeholder="Country"
+              value={inputs.country}
               onChange={handleChange}
-              id="linkedin"
+              id="country"
               className="input fadeIn seventh"
             />
             <select

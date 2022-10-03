@@ -1,14 +1,19 @@
 @use "./abstracts" as *;
 
 .container {
-  display: grid;
-  grid-template-columns: 1fr 5fr;
+  display: flex;
   gap: 2em;
   padding: 1em 2em;
-  margin: 1em;
-  width: 70%;
+  margin: 1rem 5rem;
   border: solid black;
   border-radius: 10px;
+  width: 75rem;
+
+  @media screen and (max-width: 60em) {
+    flex-direction: column;
+  width: 90%;
+
+  }
 }
 
 .about {
